@@ -1,0 +1,21 @@
+{
+  "name": "mcdf-tools",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@wikimedia/codex": "^1.2.0",
+    "glob": "^10.3.10",
+    "vite-plugin-css-injected-by-js": "^3.4.0",
+    "vue": "^3.3.11"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.5.2",
+    "vite": "^5.0.10"
+  }
+}
