@@ -1,6 +1,6 @@
-export const versions {
+/*export const versions {
 
-}
+}*/
 
 export const data = {
     "R respawns the player" : {
