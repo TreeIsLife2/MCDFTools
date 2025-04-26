@@ -1,7 +1,5 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import { visualizer } from 'rollup-plugin-visualizer'
-import { comlink } from 'vite-plugin-comlink'
 import { globSync } from 'glob'
 import { fileURLToPath } from 'url'
 
@@ -34,8 +32,8 @@ export default defineConfig({
       },
     },
   },
-  plugins: [vue(), visualizer(), comlink()],
+  plugins: [vue()],
   worker: {
-    plugins: () => [comlink()],
+    plugins: () => [],
   },
 })

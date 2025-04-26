@@ -50,7 +50,7 @@ function generate() {
     let container = data.container;
     let non_stackables = 0;
     let stackables = 0;
-    let stack_size = data.legacy ? 127 : 64;
+    let stack_size = data.overstack ? 127 : 64;
 
     if(signal_strength < 2) {
         if(signal_strength < 0) {
