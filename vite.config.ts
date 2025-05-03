@@ -7,6 +7,7 @@ const input = globSync('./src/tools/*/index.html', {
   posix: true,
 })
   .map((path) => `./${path}`)
+  .filter((path) => !path.includes('test'))
   .reduce((acc, path) => {
     const key = path.match(/src\/tools\/(.+)\/index\.html/)![1]
     acc[key] = path
