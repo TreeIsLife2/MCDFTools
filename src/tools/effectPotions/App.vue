@@ -73,7 +73,7 @@ function autogenerate() {
 
                             durationTime = durationTime + ` - ${minutes}:${secondsStr}`
                         } else {
-                            durationTime = durationMax < 10 ? durationTime + ' - 0:0' + durationMax : durationTime + ' - 0:' + durationMin.toString() 
+                            durationTime = durationMax < 10 ? durationTime + ' - 0:0' + durationMax : durationTime + ' - 0:' + durationMax.toString() 
                         }
                     } else {
                         durationTime = '0:00'
@@ -95,7 +95,7 @@ function autogenerate() {
 <template>
     <div class="form">
         <div class="item">
-            <CdxLabel>Container</CdxLabel>
+            <CdxLabel>Effect</CdxLabel>
             <CdxSelect
             v-model:selected="data.effect"
             :menu-items="[

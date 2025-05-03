@@ -65,7 +65,8 @@ export const effects = {
         "levels": [
             {
                 "level": 1,
-                "duration": 5,
+                "durationMin": 5,
+                "durationMax": 17,
                 "obtain": "Activated Beacon",
                 "trigger": "In Range"
             },
@@ -95,7 +96,8 @@ export const effects = {
         "levels": [
             {
                 "level": 1,
-                "duration": 5,
+                "durationMin": 5,
+                "durationMax": 17,
                 "obtain": "Activated Beacon",
                 "trigger": "In Range"
             },
