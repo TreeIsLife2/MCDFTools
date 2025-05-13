@@ -9,7 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@wikimedia/codex": "^1.2.0",
+    "@wikimedia/codex": "^1.23.0",
+    "@wikimedia/codex-design-tokens": "^1.23.0",
+    "@wikimedia/codex-icons": "^1.23.0",
     "glob": "^10.3.10",
     "vite-plugin-css-injected-by-js": "^3.4.0",
     "vue": "^3.5.13"

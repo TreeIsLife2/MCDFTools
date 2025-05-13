@@ -1,0 +1,27 @@
+/* This is the main CSS file of interactive tools, stripped down */
+@import '@wikimedia/codex/dist/codex.style.css';
+@import '@wikimedia/codex-design-tokens/theme-wikimedia-ui.less';
+@import '@wikimedia/codex-design-tokens/theme-wikimedia-ui-reset.less';
+@import '@wikimedia/codex-design-tokens/theme-wikimedia-ui-mixin-dark.less';
+
+pre, code {
+    background-color: #f8f9fa;
+    color: #000;
+    border: 1px solid #bbc2c6;
+    border-radius: 2px;
+    padding: 1px 4px;
+    overflow-wrap: break-word;
+}
+
+.dark {
+    .cdx-mode-dark();
+
+    color: #e6e6e6;
+    color-scheme: dark;
+
+    pre, code {
+        background-color: #444444;
+        color: #fff;
+        border: 1px solid #6f6f6f;
+    }
+}

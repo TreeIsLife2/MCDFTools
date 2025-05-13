@@ -9,8 +9,14 @@ importers:
   .:
     dependencies:
       '@wikimedia/codex':
-        specifier: ^1.2.0
+        specifier: ^1.23.0
         version: 1.23.0(vue@3.5.13)
+      '@wikimedia/codex-design-tokens':
+        specifier: ^1.23.0
+        version: 1.23.0
+      '@wikimedia/codex-icons':
+        specifier: ^1.23.0
+        version: 1.23.0
       glob:
         specifier: ^10.3.10
         version: 10.4.5
@@ -346,6 +352,10 @@ packages:
 
   '@vue/shared@3.5.13':
     resolution: {integrity: sha512-/hnE/qP5ZoGpol0a5mDi45bOd7t3tjYJBjsgCsivow7D48cJeV5l05RD82lPqi7gRiphZM37rnhW1l6ZoCNNnQ==}
+
+  '@wikimedia/codex-design-tokens@1.23.0':
+    resolution: {integrity: sha512-dG6dMZn3KqBFN5i+/CvTPZV3cf5JPmcIMsSpw9F81xjixF5uN6U+Ti9VEcD26FDHM3KiOsLQxmszZ5ow4qCBDQ==}
+    engines: {node: '>=20', npm: '>=10.8.1'}
 
   '@wikimedia/codex-icons@1.23.0':
     resolution: {integrity: sha512-wvdksrpARyHkqNjk2mx7lAjo7lyIpTav92BXSFouj1y5nM6kBT7IGx4vCkl9yGpLrv0PgjrQwLRiM0+umGQH6A==}
@@ -817,6 +827,8 @@ snapshots:
       vue: 3.5.13
 
   '@vue/shared@3.5.13': {}
+
+  '@wikimedia/codex-design-tokens@1.23.0': {}
 
   '@wikimedia/codex-icons@1.23.0': {}
 

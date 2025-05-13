@@ -1,13 +1,13 @@
-import { defineConfig } from 'vite'
+import { fileURLToPath } from 'node:url'
 import vue from '@vitejs/plugin-vue'
 import { globSync } from 'glob'
-import { fileURLToPath } from 'url'
+import { defineConfig } from 'vite'
 
 const input = globSync('./src/tools/*/index.html', {
   posix: true,
 })
   .map((path) => `./${path}`)
-  .filter((path) => !path.includes('test'))
+  .filter((path) => !path.includes('/test/'))
   .reduce((acc, path) => {
     const key = path.match(/src\/tools\/(.+)\/index\.html/)![1]
     acc[key] = path
@@ -32,12 +32,10 @@ export default defineConfig({
         chunkFileNames: `assets/[name].js`,
         assetFileNames: `assets/[name].[ext]`,
         manualChunks: {
+
         },
       },
     },
   },
   plugins: [vue()],
-  worker: {
-    plugins: () => [],
-  },
 })
